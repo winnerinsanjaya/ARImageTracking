@@ -82,7 +82,7 @@ struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
         guard let referenceImages = ARReferenceImage.referenceImages(
-            inGroupNamed: "AR Resources", bundle: nil)
+            inGroupNamed: "MuseumSurface", bundle: nil)
         else {
             fatalError("Missing expected asset catalog resources.")
         }
